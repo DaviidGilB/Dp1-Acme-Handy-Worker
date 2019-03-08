@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+ *
+ * Copyright (C) 2018 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+	
+	<definition name="tutorial/anonymous/list" extends="master.page">	
+		<put-attribute name="title" value="All tutorials" />
+		<put-attribute name="body" value="/views/anonymous/showAllTutorials.jsp" />
+	</definition>
+	
+	<definition name="tutorial/anonymous/showPictures" extends="master.page">	
+		<put-attribute name="title" value="Tutorial's pictures" />
+		<put-attribute name="body" value="/views/anonymous/showPictures.jsp" />
+	</definition>
+	
+	<definition name="tutorial/actor/list" extends="master.page">	
+		<put-attribute name="title" value="All tutorials" />
+		<put-attribute name="body" value="/views/anonymous/showAllTutorials.jsp" />
+	</definition>
+	
+	<definition name="tutorial/anonymous/listHandyTutorials" extends="master.page">	
+		<put-attribute name="title" value="Tutorials of" />
+		<put-attribute name="body" value="/views/anonymous/showAllTutorials.jsp" />
+	</definition>
+	
+	<definition name="tutorial/handyWorker/listHandyTutorials" extends="master.page">	
+		<put-attribute name="title" value="My tutorials" />
+		<put-attribute name="body" value="/views/anonymous/showAllTutorials.jsp" />
+	</definition>
+	
+	<definition name="section/anonymous/list" extends="master.page">	
+		<put-attribute name="title" value="Tutorial's sections" />
+		<put-attribute name="body" value="/views/anonymous/showSections.jsp" />
+	</definition>
+	
+	<definition name="section/anonymous/showPictures" extends="master.page">	
+		<put-attribute name="title" value="Section's pictures" />
+		<put-attribute name="body" value="/views/anonymous/showPictures.jsp" />
+	</definition>
+	
+	<definition name="section/handyWorker/list" extends="master.page">	
+		<put-attribute name="title" value="Tutorial's sections" />
+		<put-attribute name="body" value="/views/anonymous/showSections.jsp" />
+	</definition>
+	
+	<definition name="curriculum/anonymous/show" extends="master.page">	
+		<put-attribute name="title" value="Curriculum" />
+		<put-attribute name="body" value="/views/anonymous/showCurriculum.jsp" />
+	</definition>
+	
+	<definition name="curriculum/anonymous/showEducationComments" extends="master.page">	
+		<put-attribute name="title" value="Education record comments" />
+		<put-attribute name="body" value="/views/anonymous/showCommentsCurriculum.jsp" />
+	</definition>
+	
+	<definition name="curriculum/anonymous/showProfessionalComments" extends="master.page">	
+		<put-attribute name="title" value="Professional record comments" />
+		<put-attribute name="body" value="/views/anonymous/showCommentsCurriculum.jsp" />
+	</definition>
+	
+	<definition name="curriculum/anonymous/showEndorserComments" extends="master.page">	
+		<put-attribute name="title" value="Endorser record comments" />
+		<put-attribute name="body" value="/views/anonymous/showCommentsCurriculum.jsp" />
+	</definition>
+	
+	<definition name="curriculum/anonymous/showMiscellaneousComments" extends="master.page">	
+		<put-attribute name="title" value="Miscellaneous record comments" />
+		<put-attribute name="body" value="/views/anonymous/showCommentsCurriculum.jsp" />
+	</definition>
+	
+	<definition name="curriculum/handyWorker/show" extends="master.page">	
+		<put-attribute name="title" value="Curriculum" />
+		<put-attribute name="body" value="/views/anonymous/showCurriculum.jsp" />
+	</definition>
+	
+	<definition name="handyWorker/anonymous/showProfile" extends="master.page">	
+		<put-attribute name="title" value="Profile" />
+		<put-attribute name="body" value="/views/anonymous/showHandyProfile.jsp" />
+	</definition>
+	
+	<definition name="handyWorker/actor/showProfile" extends="master.page">	
+		<put-attribute name="title" value="Profile" />
+		<put-attribute name="body" value="/views/anonymous/showHandyProfile.jsp" />
+	</definition>
+	
+	<definition name="anonymous/createCustomer" extends="master.page">	
+		<put-attribute name="title" value="Create customer" />
+		<put-attribute name="body" value="/views/anonymous/createCustomer.jsp" />
+	</definition>
+	
+	<definition name="anonymous/createSponsor" extends="master.page">	
+		<put-attribute name="title" value="Create Sponsor" />
+		<put-attribute name="body" value="/views/anonymous/createSponsor.jsp" />
+	</definition>
+	
+	<definition name="anonymous/createHandyWorker" extends="master.page">	
+		<put-attribute name="title" value="Create Handy Worker" />
+		<put-attribute name="body" value="/views/anonymous/createHandyWorker.jsp" />
+	</definition>
+	
+</tiles-definitions>

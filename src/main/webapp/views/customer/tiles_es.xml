@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles_es.xml
+ *
+ * Copyright (C) 2018 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+      
+<tiles-definitions> 
+	 
+	<definition name="personalData/customer/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar Datos personales" />
+		<put-attribute name="body" value="/views/customer/editCustomer.jsp" />
+	</definition>
+	
+	<definition name="customer/applications" extends="master.page">	
+		<put-attribute name="title" value="Mis Aplicaciones" />
+		<put-attribute name="body" value="/views/customer/applications.jsp" />
+	</definition>
+	
+	<definition name="customer/comments" extends="master.page">	
+		<put-attribute name="title" value="Comentarios" />
+		<put-attribute name="body" value="/views/customer/comments.jsp" />
+	</definition>
+	
+	<definition name="customer/addComment" extends="master.page">	
+		<put-attribute name="title" value="Añadir un Comentario" />
+		<put-attribute name="body" value="/views/customer/addComment.jsp" />
+	</definition>
+	
+	<definition name="customer/creditCard" extends="master.page">	
+		<put-attribute name="title" value="Tarjeta de Crédito" />
+		<put-attribute name="body" value="/views/customer/creditCard.jsp" />
+	</definition>
+	
+	<definition name="customer/changeStatus" extends="master.page">	
+		<put-attribute name="title" value="Change Status" />
+		<put-attribute name="body" value="/views/customer/changeStatus.jsp" />
+	</definition>
+	
+	<definition name="customer/fixUpTask" extends="master.page">	
+		<put-attribute name="title" value="Mis Tareas" />
+		<put-attribute name="body" value="/views/customer/fixUpTask.jsp" />
+	</definition>
+	
+	<definition name="customer/createFixUpTask" extends="master.page">	
+		<put-attribute name="title" value="Crear una Tarea" />
+		<put-attribute name="body" value="/views/customer/createFixUpTask.jsp" />
+	</definition>
+	
+	<definition name="customer/editFixUpTask" extends="master.page">	
+		<put-attribute name="title" value="Editar una Tarea" />
+		<put-attribute name="body" value="/views/customer/createFixUpTask.jsp" />
+	</definition>
+	
+	<definition name="customer/warranty" extends="master.page">	
+		<put-attribute name="title" value="Garantía" />
+		<put-attribute name="body" value="/views/customer/warranty.jsp" />
+	</definition>
+	
+	<definition name="customer/phases" extends="master.page">	
+		<put-attribute name="title" value="Fases" />
+		<put-attribute name="body" value="/views/customer/phases.jsp" />
+	</definition>
+	
+	<definition name="/warranty/customer/edit.do" extends="master.page">	
+		<put-attribute name="title" value="Mostrar aprobaciones" />
+		<put-attribute name="body" value="/views/customer/listEndorsment.jsp" />
+	</definition>
+	
+	<definition name="/warranty/customer/edit.do" extends="master.page">	
+		<put-attribute name="title" value="Editar aprobaciones" />
+		<put-attribute name="body" value="/views/customer/editEndorsment.jsp" />
+	</definition>
+	
+		<!-- Complaints and Reports -->
+	
+		<definition name="complaint/customer/list" extends="master.page">	
+		<put-attribute name="title" value="Quejas" />
+		<put-attribute name="body" value="/views/customer/complaints.jsp" />
+	</definition>
+	
+		<definition name="complaint/customer/create" extends="master.page">	
+		<put-attribute name="title" value="Añadir Queja" />
+		<put-attribute name="body" value="/views/customer/createComplaint.jsp" />
+	</definition>
+	
+	<definition name="/complaint/attachment/customer/edit.do" extends="master.page">	
+		<put-attribute name="title" value="Añadir archivo" />
+		<put-attribute name="body" value="/views/customer/createAttachmentComplaint.jsp" />
+	</definition>
+	
+	<definition name="note/customer/create" extends="master.page">	
+		<put-attribute name="title" value="Editar nota" />
+		<put-attribute name="body" value="/views/customer/addNote.jsp" />
+	</definition>
+	
+	<definition name="report/customer/list" extends="master.page">	
+		<put-attribute name="title" value="Informes de la queja" />
+		<put-attribute name="body" value="/views/customer/complaintsReport.jsp" />
+	</definition>
+	
+		<definition name="attachment/customer/list" extends="master.page">	
+		<put-attribute name="title" value="Archivos de la queja" />
+		<put-attribute name="body" value="/views/customer/attachments.jsp" />
+	</definition>
+	
+	<definition name="attachment/customer/listPerReport" extends="master.page">	
+		<put-attribute name="title" value="Archivos del reporte" />
+		<put-attribute name="body" value="/views/customer/attachmentsReport.jsp" />
+	</definition>
+
+	<definition name="note/customer/showComments" extends="master.page">	
+		<put-attribute name="title" value="Comentarios de la nota" />
+		<put-attribute name="body" value="/views/customer/noteComments.jsp" />
+	</definition>
+	
+	
+	<definition name="note/customer/show" extends="master.page">	
+		<put-attribute name="title" value="Notas del informe" />
+		<put-attribute name="body" value="/views/customer/reportNotes.jsp" />
+	</definition>
+	
+	
+	<definition name="/complaint/report/attachment/list.do" extends="master.page">	
+		<put-attribute name="title" value="Archivos de los informes" />
+		<put-attribute name="body" value="/views/customer/reportsAttachments.jsp" />
+	</definition>
+	
+	<!-- Endorsements -->
+	
+	<definition name="endorsement/customer/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar aprobaciones" />
+		<put-attribute name="body" value="/views/customer/editEndorsment.jsp" />
+	</definition>
+	
+	<definition name="endorsement/customer/list" extends="master.page">	
+		<put-attribute name="title" value="Listado de Aprobaciones" />
+		<put-attribute name="body" value="/views/customer/listEndorsment.jsp" />
+	</definition>
+	
+	<definition name="endorsement/customer/listComments" extends="master.page">	
+		<put-attribute name="title" value="Comentarios de la aprobacion" />
+		<put-attribute name="body" value="/views/customer/endorsementComments.jsp" />
+	</definition>
+	
+	<definition name="endorsement/customer/comment/create" extends="master.page">	
+		<put-attribute name="title" value="Añadir un comentario" />
+		<put-attribute name="body" value="/views/customer/createComment.jsp" />
+	</definition>
+	
+	<definition name="endorsement/customer/delete" extends="master.page">	
+		<put-attribute name="title" value="Eliminar aprobacion" />
+		<put-attribute name="body" value="/views/customer/endorsementDelete.jsp" />
+	</definition>
+	
+	<definition name="endorsement/customer/create" extends="master.page">	
+		<put-attribute name="title" value="Crear Aprobación" />
+		<put-attribute name="body" value="/views/customer/editEndorsment.jsp" />
+	</definition>
+	
+</tiles-definitions>
